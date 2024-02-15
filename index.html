@@ -41,7 +41,7 @@
   function showPin(pins, number) {
       var background_css = jQuery(pins[number]).css('background-image');
       var background_url = background_css.replace('url(', '').replace(')', '').replaceAll('"', '');
-      jQuery('body').append('<img src="' + background_url + '"/>');
+      jQuery('#pinterest-feed').append('<img style="display:block; width:100%;" src="' + background_url + '"/>');
   }
 
   function removeFrame(frame) {
